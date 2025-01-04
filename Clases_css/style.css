@@ -147,3 +147,71 @@ header{
     flex-wrap: wrap;
     padding: 20px; 
 }
+
+.formulario {
+    /* Estilos generales del formulario */
+form {
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centrar el formulario */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para las etiquetas (labels) */
+label {
+    display: block; /* Etiquetas en bloque */
+    margin-bottom: 5px;
+    color: #333; /* Color de texto más oscuro para mejor contraste */
+}
+
+/* Estilos para los campos de entrada (inputs) */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluir padding y border en el ancho */
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Borde azul al enfocar el campo */
+    outline: none; /* Quitar el contorno predeterminado del navegador */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Sombra suave al enfocar */
+}
+
+/* Estilos para el área de texto (textarea) */
+textarea {
+    min-height: 100px; /* Altura mínima del textarea */
+    resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+/* Estilos para el botón de enviar */
+input[type="submit"] {
+    background-color: #007bff; /* Azul para el botón */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilos para mensajes de error (si los necesitas) */
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+}
