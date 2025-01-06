@@ -215,3 +215,84 @@ input[type="submit"]:hover {
     margin-top: 5px;
 }
 }
+@media screen and (max-width: 800px) {
+    .link_navegador {
+        display: none;
+    }
+    .menu {
+        display: inherit
+    }
+}
+
+/*Inicio del Navegador para moviles */
+.header a{
+    text-decoration: none;
+}
+
+.header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: #000;
+    transition: all 0.3s;
+}
+.header .overlay .overlay_conten{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus{
+    color: aqua;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height: 450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    
+    .header .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+@media (min-width: 799px) {
+    .menu {
+        display: none; /* Oculta el enlace "Menu" */
+    }
+    #mobile_menu {
+        display: none; /* Oculta TODO el menú desplegable */
+    }
+}
+
+.header .menu button{
+    background-color: #ffa501;
+    transform: scale(1.2);
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    border-radius: 20%;
+    transition: 0.3s;
+}
