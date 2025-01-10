@@ -291,3 +291,60 @@ input[type="submit"]:hover {
     border-radius: 20%;
     transition: 0.3s;
 }
+
+.carusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.carusel {
+    scrollbar-width: none; /* Oculta el scroll en Firefox */
+    -ms-overflow-style: none; /* Oculta el scroll en Internet Explorer */
+}
+
+.carusel::-webkit-scrollbar {
+    display: none; /* Oculta el scroll en Chrome, Safari y Edge */
+}
+
+.elemento{
+    flex: 1 0 auto;
+    margin: 0 50px;
+    background: rgb(3,35, 54);
+    width: 500px;
+    height: 300px;
+    border-radius: 3%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 1%;
+}
+
+.elemento .linea {
+    position: relative;
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin: 10px 0;
+}
+
+.elemento p{
+    display: flex;
+    font-size: 24px;
+    color: #ccc;
+}
+
+.elemento p a {
+    position: relative;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.Nivel_educativo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
