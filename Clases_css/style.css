@@ -15,12 +15,7 @@ li {
 input{
     width: 50%;
 }
-.Presentacionperosonal{
-    background-color:rgb(247, 247, 20);
-    width: 300px, 50px, 50px, 100px;
-    text-align: justify;
-}
-/*edicion de la pagina presentacion personal*/
+/*header*/
 header{
     background-color: black;
     display: flex;
