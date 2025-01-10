@@ -333,6 +333,7 @@ input[type="submit"]:hover {
     display: flex;
     font-size: 22px;
     color: #ccc;
+    word-break: break-word;
 }
 
 .elemento p a {
