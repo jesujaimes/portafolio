@@ -349,3 +349,116 @@ input[type="submit"]:hover {
     align-items: center;
     margin: 0;
 }
+
+/* Parte de la portada o index */
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+    width: 100%;
+    max-width: 900px; /* Definir un max-width razonable en píxeles */
+    height: 100%;
+    max-height: 70vh; /* Mantiene la altura de la ventana pero ajustable */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    padding: 20px; /* Espaciado interno para mejor diseño */
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 0 auto; /* Centra horizontalmente el div */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    margin-top: 1%;
+    overflow: hidden; /* Previene desbordes horizontales */
+
+}
+
+.home-content {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    max-width: 460px; 
+    word-wrap: break-word; 
+    word-break: break-word;
+    overflow-wrap: break-word;
+
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 600;
+    animation: SlideRight 2s ease forwards;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    margin: -20px 0;
+    animation: SlideTop 2s ease forwards;
+}
+
+.home-content span {
+    color: rgb(7, 7, 245);
+}
+
+.home-content p {
+    animation: SlideRight 2s ease forwards;
+}
+
+.btn {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #000;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #002;
+    animation: SlideTop 2s ease forwards;
+    margin-top: 20px; /* Separación del botón */
+}
+
+/* Animaciones */
+@keyframes SlideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes SlideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 40px;
+    }
+    .home-content h3 {
+        font-size: 24px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 32px;
+    }
+    .home-content h3 {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
