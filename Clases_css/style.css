@@ -462,3 +462,10 @@ input[type="submit"]:hover {
         padding: 8px 12px;
     }
 }
+
+.div_centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
