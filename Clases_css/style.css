@@ -92,6 +92,7 @@ header{
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+     padding: 10px;
 }
 
 .card .front h3{
